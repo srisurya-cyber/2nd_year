@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   let fruits = ["apple", "banana", "mango"] ;
+        document.write("original array" + fruits + "<br>");
+        document.write("length of array:" + fruits.length + "<br>");
+        fruits.push("orange");
+        document.write("after push('orange')" + fruits + "<br>");
+        fruits.pop();
+        document.write("after pop(): " + fruits + "<br>");
+        fruits.unshift("grapes");
+        document.write("after unshift('grapes'): " + fruits + "<br>");
+        fruits.shift(); document.write("after shift():" + fruits + "<br>");
+        document.write("index of banana: " + fruits.indexOf("banana") + "<br>");
+        document.write("index of mango:" + fruits.indexOf("mango") + "<br>");
+        document.write("slice (1,3):" + fruits.slice(1, 3) + "<br>");
+        fruits.splice(1, 1, "peach");
+        document.write("after splice:" + fruits + "<br>");
+        let morefruits = ["kiwi", "papaya"];
+        document.write("concat:" + fruits.concat(morefruits) + "<br>");
+     </script>
+</body>
+</html>
